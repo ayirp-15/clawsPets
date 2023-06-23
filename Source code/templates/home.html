@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <title>Pet Site</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        margin-left: 10px;
+      }
+      
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      </style>
+  </head>
+  <body>
+    <section class="nav-section">
+      <nav class="bg-black">
+        <div class="contain">
+          <div class="flex">
+            <a href="/"><img src="/static/images/Logo.png" alt="" width ="290px" height="70px"/></a>
+            <div class="flex-sapce-between">
+              <div class="flex-wrap">
+                <ul class="nav-link-wrapper">
+                   <li class="nav-link"><a href="/home">Home</a></li>
+                  <li class="nav-link"><a href="/petfeed">Pet Feed</a></li>
+                  <li class="nav-link"><a href="/petwear">Pet wear</a></li>
+                  <li class="nav-link"><a href="/pettoys">Pet Toys</a></li>
+                  <li class="nav-link"><a href="/petmedi">Pet Medicines</a></li>
+                  <li class="nav-link"><a href="/Mycart">My Cart</a></li>
+                  <li class="nav-link"><a href="/logout">Log Out</a></li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </nav>
+    </section>
+    
+    <img src="/static/images/Home/homecen.png" alt="" width="1530px" height="350px" style="position: relative;
+    top: 100px;">
+    <img src="/static/images/Home/abouttop.png" alt="" width="1000px" height="100px" style="position: relative;
+    top: 100px; left: 250px;">
+    <img src="/static/images/Home/about.png" alt="" width="1000px" height="150px" style="position: relative;
+    top: 120px; left: 250px">
+   <section>
+      <div class="contain" style="position: relative;
+      top: 110px; right: 50px;">
+        <!--div class="padding-hero"-->
+    <div class="row" style="text-align: center;">
+
+  <div class="column">
+    <button style="position: relative;
+    left: 35px">
+    <img src="/static/images/Home/petfeedingind.png" alt="Snow" width="350px" height="350px"></button>
+  </div>
+  <div class="column"><button  style="position: relative;
+    left: 35px">
+    <img src="/static/images/Home/pettoysind.png" alt="Forest" width="350px" height="350px"></button>
+  </div>
+  <div class="column"><button  style="position: relative;
+    left: 35px">
+    <img src="/static/images/Home/petwearind.png" alt="Mountains" width="350px" height="350px"></button>
+  </div>
+  </div>
+
+  </div>
+      </div>
+    </section>
+    
+</body>
+</html>
